@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Dashboard - LawConnect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+            background-color: #ffc107;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            padding-top: 20px;
+            color: white;
+        }
+        .sidebar a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .dashboard-content {
+            margin-left: 270px;
+            padding: 30px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #ffc107;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #ffc107;
+            color: #212529;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #e0a800;
+        }
+        .case-status {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="guardian_dashboard.html">
+                <img src="https://png.pngtree.com/png-clipart/20191123/original/pngtree-justice-scales-lawyer-logo-scales-of-justice-sign-icon-court-of-png-image_5196526.jpg" 
+                     alt="LawConnect Logo">
+                LawConnect
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3 class="text-center">Guardian Dashboard</h3>
+        <a href="#">Home</a>
+        <a href="#">View Case Details</a>
+        <a href="#">Request Appointment</a>
+        <a href="#">Appointment History</a>
+        <a href="#">Messages</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+        <h2>Welcome, Guardian</h2>
+        <p>Here’s an overview of your inmate’s case and related actions.</p>
+
+        <!-- Case Details Section -->
+        <div class="card">
+            <div class="card-header">Case Details</div>
+            <div class="card-body">
+                <p><strong>Inmate Name:</strong> John Doe</p>
+                <p><strong>Case Number:</strong> #123456789</p>
+                <p><strong>Case Type:</strong> Criminal Defense</p>
+                <p><strong>Case Status:</strong> <span class="case-status text-success">Ongoing</span></p>
+                <p><strong>Lawyer Assigned:</strong> Jane Smith</p>
+                <button class="btn btn-warning btn-custom">Request Appointment with Lawyer</button>
+            </div>
+        </div>
+
+        <!-- Upcoming Appointments Section -->
+        <div class="card">
+            <div class="card-header">Upcoming Appointments</div>
+            <div class="card-body">
+                <p><strong>Appointment Date:</strong> April 5, 2025</p>
+                <p><strong>Lawyer:</strong> Jane Smith</p>
+                <p><strong>Status:</strong> Confirmed</p>
+                <button class="btn btn-danger btn-custom">Cancel Appointment</button>
+            </div>
+        </div>
+
+        <!-- Case Updates Section -->
+        <div class="card">
+            <div class="card-header">Recent Case Updates</div>
+            <div class="card-body">
+                <p><strong>March 20, 2025:</strong> Lawyer Jane Smith has reviewed all the case files and submitted an appeal request to the court.</p>
+                <p><strong>March 15, 2025:</strong> Preliminary hearing scheduled for March 25, 2025.</p>
+                <p><strong>March 10, 2025:</strong> Inmate transferred to a new detention facility for further hearings.</p>
+            </div>
+        </div>
+
+        <!-- Message Section -->
+        <div class="card">
+            <div class="card-header">Messages</div>
+            <div class="card-body">
+                <p>You have no new messages at the moment.</p>
+                <button class="btn btn-primary btn-custom">Send a Message to Lawyer</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

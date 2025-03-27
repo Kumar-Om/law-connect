@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmate Dashboard - LawConnect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .lawyer-profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px auto;
+            display: block;
+        }
+
+        .lawyer-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .lawyer-name {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .lawyer-credentials {
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Available Lawyers Section -->
+    <div class="card">
+        <div class="card-header">👥 Available Lawyers</div>
+        <div class="card-body">
+            <!-- Lawyer Cards will be displayed here -->
+            <div id="lawyerCardsContainer">
+                <!-- Example Lawyer Card -->
+                <div class="lawyer-card">
+                    <div class="card-header">
+                        <img src="https://example.com/lawyer1.jpg" alt="Lawyer Profile Picture"
+                            class="lawyer-profile-picture">
+                        <h5 class="lawyer-name">John Smith, Esq.</h5>
+                        <p class="lawyer-credentials">J.D., Harvard Law School</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Practice Areas:</strong> Criminal Defense, Family Law</li>
+                            <li><strong>Years of Experience:</strong> 10 Years</li>
+                            <li><strong>Contact Information:</strong> 555-1234 | john.smith@example.com</li>
+                            <li><strong>Client Reviews:</strong> 4.8 / 5</li>
+                            <li><a href="#" class="link-action">Read Full Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- More lawyer cards will be added here -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
